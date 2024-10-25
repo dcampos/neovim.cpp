@@ -4,6 +4,7 @@
 #define NEOVIM_CPP__NVIm_HPP_
 
 #include "nvim_rpc.hpp"
+#include "type.hpp"
 
 namespace nvim {
 

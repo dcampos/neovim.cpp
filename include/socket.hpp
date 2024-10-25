@@ -26,10 +26,10 @@ public:
     }
 
     void connect_tcp(const std::string& host, 
-               const std::string& service, double timeout_sec);
+               const std::string& service, long timeout_sec);
 
-    size_t read(char *rbuf, size_t capacity, double timeout_sec);
-    void write(char *sbuf, size_t size, double timeout_sec);
+    size_t read(char *rbuf, size_t capacity, long timeout_sec);
+    void write(char *sbuf, size_t size, long timeout_sec);
 
 private:
     void check_deadline();

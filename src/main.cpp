@@ -7,7 +7,10 @@ int main() {
     nvim.nvim_eval("\( 3 + 2 \) \* 4");
     std::cout << "get_current_line = " << nvim.nvim_get_current_line() << std::endl;
     nvim.vim_set_current_line("testhogefuga");
-    
+
+    int res = nvim.nvim_strwidth("foo bar");
+    std::cout << "res = " << res << std::endl;
+
     for(;;) {}
 
     return 0;
